@@ -1,26 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Sketch from './Component/Sketch'
-import Header from './Component/Header'
-import Bottom from './Component/Bottom'
 import { Box } from '@mui/material'
-import { ThemeProvider } from './Component/Context'
+import './App.css'
+import Sketch from './components/Sketch'
+import Header from './components/Header'
+import Bottom from './components/Bottom'
+import { ThemeProvider } from './components/ThemeContext'
 
 function App() {
- 
-
   return (
-    <>
-<ThemeProvider>
-    <Box style={{height:"100vh",width:"100vw",border:"2px solid red",display:"flex",flexDirection:"column",gap:"10px"}}>
-    <Header></Header>
-    <Sketch></Sketch>
-    <Bottom></Bottom>
-    </Box>
+    <ThemeProvider>
+      <Box sx={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        padding: "10px",
+        boxSizing: "border-box"
+      }}>
+        <Header />
+        <Sketch />
+        <Bottom />
+      </Box>
     </ThemeProvider>
-    </>
   )
 }
 
