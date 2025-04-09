@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import { useState } from 'react'
-import './App.css'
-import Sketch from './Component/Sketch'
-import Header from './Component/Header'
-import Bottom from './Component/Bottom'
-=======
->>>>>>> feature/add-drawing-tools
 import { Box } from '@mui/material'
 import './App.css'
 import Sketch from './components/Sketch'
