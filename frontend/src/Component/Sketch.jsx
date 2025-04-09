@@ -17,7 +17,7 @@ export default function Sketch() {
     style={styles}
     width="500"
     height="100%"
-    strokeWidth={4}
+    strokeWidth={3}
     strokeColor={color}
   />
 </Paper>
